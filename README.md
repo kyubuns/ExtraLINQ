@@ -391,7 +391,7 @@ Return with index.
 string[] hobbits = { "Frodo", "Sam", "Merry", "Pippin" };
 string[] hobbitsWithIndex = hobbits.WithIndex().ToArray();
 
-// hobbitsWithIndex = [("Frodo", 0), ("Sam", 1)]
+// hobbitsWithIndex = [("Frodo", 0), ("Sam", 1), ("Merry", 2), ("Pippin", 3)]
 ```
 
 #### `Without`
