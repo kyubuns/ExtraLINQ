@@ -3,7 +3,6 @@
 This is a repository for [mariusschulz/ExtraLINQ](https://github.com/mariusschulz/ExtraLINQ) that is easy to use with UnityPackageManager.
 
 ```
-Packages/manifest.json
 "com.mariusschulz.extralinq": "https://github.com/kyubuns/ExtraLINQUnity.git?path=Unity/Assets/ExtraLINQ"
 ```
 
