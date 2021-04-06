@@ -47,6 +47,7 @@ Extensions for collections of type `IEnumerable<T>`:
 - [`ToHashSet`](#tohashset)
 - [`TryFirst`](#tryfirst)
 - [`WhereNot`](#wherenot)
+- [`WithIndex`](#withindex)
 - [`Without`](#without)
 
 Extensions for collections of type `NameValueCollection`:
@@ -380,6 +381,17 @@ Func<string, bool> startsWithN = value => value.StartsWith("N");
 string vilya = theThreeRings.WhereNot(startsWithN).Single();
 
 // vilya = "Vilya"
+```
+
+#### `WithIndex`
+
+Return with index.
+
+```csharp
+string[] hobbits = { "Frodo", "Sam", "Merry", "Pippin" };
+string[] hobbitsWithIndex = hobbits.WithIndex().ToArray();
+
+// hobbitsWithIndex = [("Frodo", 0), ("Sam", 1)]
 ```
 
 #### `Without`
