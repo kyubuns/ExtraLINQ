@@ -1,3 +1,14 @@
+# ExtraLINQUnity
+
+This is a repository for [mariusschulz/ExtraLINQ](https://github.com/mariusschulz/ExtraLINQ) that is easy to use with UnityPackageManager.
+
+```
+Packages/manifest.json
+"com.mariusschulz.extralinq": "https://github.com/kyubuns/ExtraLINQUnity.git?path=Unity/Assets/ExtraLINQ"
+```
+
+-----
+
 # ExtraLINQ
 
 ExtraLINQ provides a set of extension methods for various .NET sequence types.
