@@ -35,6 +35,7 @@ Extensions for collections of type `IEnumerable<T>`:
 - [`Shuffle`](#shuffle)
 - [`TakeSkip`](#takeskip)
 - [`ToHashSet`](#tohashset)
+- [`TryFirst`](#tryfirst)
 - [`WhereNot`](#wherenot)
 - [`Without`](#without)
 
@@ -346,6 +347,17 @@ HashSet<string> gollumsVocabulary = gollumsUtterings
 ```
 
 Note that the main purpose of `ToHashSet` is to provide a chainable wrapper around the `HashSet` constructor.
+
+
+#### `TryFirst`
+
+Instead of FirstOrDefault for structures like ValueTuple.
+
+```csharp
+if (items.TryFirst(x => x.Value == 5, out var target))
+{
+}
+```
 
 
 #### `WhereNot`
