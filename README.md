@@ -38,6 +38,8 @@ Extensions for collections of type `IEnumerable<T>`:
 - [`IsEmpty`](#isempty)
 - [`IsNullOrEmpty`](#isnullorempty)
 - [`JoinedBy`](#joinedby)
+- [`MaxBy`](#maxby)
+- [`MinBy`](#minby)
 - [`None`](#none)
 - [`Partition`](#partition)
 - [`Random`](#random)
