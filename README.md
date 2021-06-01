@@ -46,6 +46,7 @@ Extensions for collections of type `IEnumerable<T>`:
 - [`TakeSkip`](#takeskip)
 - [`ToHashSet`](#tohashset)
 - [`TryGetFirst`](#trygetfirst)
+- [`TryGetLast`](#trygetlast)
 - [`WhereNot`](#wherenot)
 - [`WithIndex`](#withindex)
 - [`Without`](#without)
@@ -366,6 +367,17 @@ Instead of FirstOrDefault for structures like ValueTuple.
 
 ```csharp
 if (items.TryGetFirst(x => x.Value == 5, out var target))
+{
+}
+```
+
+
+#### `TryGetLast`
+
+Instead of LastOrDefault for structures like ValueTuple.
+
+```csharp
+if (items.TryGetLast(x => x.Value == 5, out var target))
 {
 }
 ```
