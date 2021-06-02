@@ -20,7 +20,7 @@ namespace ExtraLinq
                     var v = enumerator.Current;
                     var t = comparer(v);
 
-                    if (index.CompareTo(t) < 0) continue;
+                    if (index.CompareTo(t) > 0) continue;
 
                     value = v;
                     index = t;
