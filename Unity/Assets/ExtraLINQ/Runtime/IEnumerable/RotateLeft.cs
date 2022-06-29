@@ -15,7 +15,8 @@ namespace ExtraLinq
         public static IEnumerable<TSource> RotateLeft<TSource>(this IEnumerable<TSource> source, int count)
         {
             ThrowIf.Argument.IsNull(source, "source");
-            ThrowIf.Argument.IsNegative(count, "count");
+
+            if (count < 0) return RotateRight(source, -count);
 
             var sourceArray = source.ToArray();
             var c = count % sourceArray.Length;
