@@ -48,7 +48,8 @@ Extensions for collections of type `IEnumerable<T>`:
 - [`Partition`](#partition)
 - [`Random`](#random)
 - [`Repeat`](#repeat)
-- [`Rotate`](#rotate)
+- [`RotateLeft`](#rotateleft)
+- [`RotateRight`](#rotateright)
 - [`Shuffle`](#shuffle)
 - [`TakeSkip`](#takeskip)
 - [`ToHashSet`](#tohashset)
@@ -316,15 +317,27 @@ string[] cookieMonsterSounds = eatingSounds.Repeat(3).ToArray();
 ```
 
 
-#### `Rotate`
+#### `RotateLeft`
 
-Rotate
+Rotate Left
 
 ```csharp
 int[] numbers = { 1, 2, 3, 4, 5 };
-int[] rotatedNumbers = numbers.Rotate(2).ToArray();
+int[] rotatedNumbers = numbers.RotateLeft(2).ToArray();
 
 // rotatedNumbers = [3, 4, 5, 1, 2]
+```
+
+
+#### `RotateRight`
+
+Rotate Right
+
+```csharp
+int[] numbers = { 1, 2, 3, 4, 5 };
+int[] rotatedNumbers = numbers.RotateRight(1).ToArray();
+
+// rotatedNumbers = [5, 1, 2, 3, 4]
 ```
 
 
