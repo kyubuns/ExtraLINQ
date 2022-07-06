@@ -16,10 +16,11 @@ namespace ExtraLinq
         {
             ThrowIf.Argument.IsNull(source, "source");
 
+            if (count == 0) return source;
             if (count < 0) return RotateLeft(source, -count);
 
-            var sourceArray = source.ToArray();
-            var c = sourceArray.Length - (count % sourceArray.Length);
+            var sourceArray = source as IReadOnlyList<TSource> ?? source.ToArray();
+            var c = sourceArray.Count - (count % sourceArray.Count);
             return sourceArray.Skip(c).Concat(sourceArray.Take(c));
         }
     }
