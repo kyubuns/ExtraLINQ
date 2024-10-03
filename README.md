@@ -56,6 +56,7 @@ Extensions for collections of type `IEnumerable<T>`:
 - [`TryGetFirst`](#trygetfirst)
 - [`TryGetLast`](#trygetlast)
 - [`WhereNot`](#wherenot)
+- [`WhereNotNull`](#wherenotnull)
 - [`WithIndex`](#withindex)
 - [`Without`](#without)
 
@@ -426,6 +427,8 @@ string vilya = theThreeRings.WhereNot(startsWithN).Single();
 
 // vilya = "Vilya"
 ```
+
+#### `WhereNotNull`
 
 #### `WithIndex`
 
